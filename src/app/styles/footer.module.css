@@ -1,0 +1,59 @@
+
+.footer {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling for the top section (e.g., "India" label) */
+  .top {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #dadce0;
+    justify-content: start;
+  }
+  
+  .text {
+    color: #1f1f1f;
+    font-size: 15px;
+    line-height: 1;
+  }
+  
+  /* Styling for the links section (quick links and settings) */
+  .links {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 15px;
+    border-bottom: 1px solid #dadce0;
+    justify-content: center;
+  }
+  
+  /* For larger screens (like tablets and desktops) */
+  @media (min-width: 768px) {
+    .links {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Container for the individual link items */
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for each individual link */
+  .link {
+    color: #1f1f1f;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .link {
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+  
