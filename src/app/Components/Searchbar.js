@@ -12,7 +12,8 @@ export default function Searchbar(props) {
     const {
         searchQuery,
         setSearchQuery,
-        searchQueryHandler
+        searchQueryHandler,
+        setMic
     } = props;
 
     const [isUploadOpen, setIsUploadOpen] = useState(false); // State to handle image upload section visibility
@@ -45,7 +46,7 @@ export default function Searchbar(props) {
                         onClick={() => setSearchQuery("")}
                     />
                 )}
-                <Image className={styles.micIcon} src={MicIcon} alt="mic" />
+                <Image className={styles.micIcon} src={MicIcon} alt="mic" onClick={()=>setMic(true)}/>
                 <Image className={styles.imageIcon} src={ImageIcon} alt="image" onClick={() => setIsUploadOpen(true)}/>
             </div>
             {isUploadOpen && (
